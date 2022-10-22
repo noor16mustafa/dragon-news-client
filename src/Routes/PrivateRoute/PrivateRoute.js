@@ -16,7 +16,7 @@ const PrivateRoute = ({ children }) => {
     if (loading) {
         return <Spinner animation='border' variant='primary'></Spinner>
     }
-
+    console.log(user);
     if (!user) {
         return <Navigate to='/login' state={{ from: location }}></Navigate>
     }

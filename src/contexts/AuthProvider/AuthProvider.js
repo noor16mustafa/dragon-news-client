@@ -10,7 +10,7 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState(null);
 
     const providerLogin = (provider) => {
         setLoading(true);
